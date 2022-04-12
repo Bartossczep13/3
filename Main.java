@@ -20,6 +20,7 @@ class Main {
           String i = x.nextLine();
           int w = x.nextInt();
           d.addStudent(new Student(i,w));
+            System.out.println("Dodano studenta do bazy");
             break;
             case 2:
           var students = d.getStudents();
