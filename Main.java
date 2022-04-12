@@ -15,11 +15,11 @@ class Main {
       switch(k)
         {
           case 1:
-          System.out.println("Podaj imie i wiek studenta: ");
+          System.out.println("Podaj imie i wiek i date urodzenia studenta: ");
           x = new Scanner (System.in);
           String i = x.nextLine();
           int w = x.nextInt();
-          int d = x.nextInt();  
+          String d = x.nextLine();  
           odwo.addStudent(new Student(i,w,d));
             System.out.println("Dodano studenta do bazy");
             break;
