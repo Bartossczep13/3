@@ -4,7 +4,7 @@ class Main {
   private static Scanner x;
   public static void main(String[] args) {
     try {
-    Service1 d = new Service1();
+    Service1 odwo = new Service1();
       
     int k;
       System.out.println("wybierz funkcje ");
@@ -19,15 +19,15 @@ class Main {
           x = new Scanner (System.in);
           String i = x.nextLine();
           int w = x.nextInt();
-          d.addStudent(new Student(i,w));
+          int d = x.nextInt();  
+          odwo.addStudent(new Student(i,w,d));
             System.out.println("Dodano studenta do bazy");
             break;
             case 2:
-          var students = d.getStudents();
+          var students = odwo.getStudents();
           for(Student current : students) {
-          System.out.println(current.ToString());
-            case 3:
-            break;
+          System.out.println(current.ToString());  
+            
         }
       
 
